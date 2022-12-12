@@ -1,0 +1,15 @@
+<!--index.html--> 
+<html>
+    {{ template "header.html" .}}
+      <h4>Разработаны функции:</h4>
+        <ol>
+          <li>создания пользователя</li>
+          <li>по ID делает друзей из двух пользователей (curl -X POST -i http://localhost:8800/users/friends -H "content-type: application/json" -d "{\"sourceid\":1,\"targetid\":4}")</li>
+          <li>удаления пользователя</li>
+          <li>обновления возраста пользователя</li>
+          <li>просмотра всех пользователей</li>
+          <li>просмотра информации о пользователе</li>  
+          <li>просмотр всех друзей пользователя</li>
+        </ol> 
+    {{ template "footer.html" .}}
+</html> 
